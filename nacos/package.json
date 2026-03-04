@@ -1,0 +1,10 @@
+{
+  "name": "nacos",
+  "version": "1.0.0",
+  "description": "Nacos 配置中心 API 客户端",
+  "main": "index.js",
+  "dependencies": {},
+  "keywords": ["nacos", "config", "configuration"],
+  "author": "lilianzhu",
+  "license": "MIT"
+}
