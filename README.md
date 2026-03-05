@@ -4,61 +4,112 @@
 
 > DevOps Tools Skill Marketplace - Ready to Use
 
-Empower DevOps engineers and developers to quickly access best practices for mainstream DevOps tools, reducing learning curves and improving work efficiency.
+让开发者能够快速获取主流 DevOps 工具的最佳实践，降低工具使用门槛，提升工作效率。
 
-## 🎯 Target Users
+## 🎯 目标用户
 
-- DevOps Engineers
-- SREs
-- Platform Engineers
-- Developers
+- DevOps 工程师
+- SRE
+- 平台工程师
+- 开发者
 
-## 📦 Skills List
+## 📦 技能列表
 
-### 🔧 Code Management
+### 🔧 代码管理
 
-| Skill | Description |
-|-------|-------------|
-| [GitLab](./gitlab/) | GitLab operations |
+| 技能 | 描述 |
+|------|------|
+| [GitLab](./gitlab/) | GitLab 仓库管理、MR、Pipeline |
+| [GitHub](./github/) | GitHub 仓库管理、PR、Actions、Issue |
 
-### ⚙️ Continuous Integration
+### ⚙️ 持续集成
 
-| Skill | Description |
-|-------|-------------|
-| [Jenkins](./jenkins/) | Jenkins CI/CD operations |
-| [Zadig](./zadig/) | Zadig DevOps platform operations |
+| 技能 | 描述 |
+|------|------|
+| [Jenkins](./jenkins/) | Jenkins CI/CD 自动化 |
+| [Zadig](./zadig/) | Zadig 一站式 DevOps 平台 |
 
-### 📡 Configuration Center
+### 📡 配置中心
 
-| Skill | Description |
-|-------|-------------|
-| [Nacos](./nacos/) | Nacos configuration center |
-| [Apollo](./apollo/) | Apollo configuration center |
+| 技能 | 描述 |
+|------|------|
+| [Nacos](./nacos/) | Nacos 配置管理 |
+| Apollo | Apollo 配置中心（开发中） |
 
-### 📊 Monitoring & Alerting
+### 📊 监控告警
 
-| Skill | Description |
-|-------|-------------|
-| [Grafana](./grafana/) | Grafana visualization and monitoring |
-| [SonarQube](./sonar/) | SonarQube code quality |
+| 技能 | 描述 |
+|------|------|
+| [Grafana](./grafana/) | Grafana 可视化监控 |
+| [SonarQube](./sonar/) | SonarQube 代码质量 |
 
-### 🌐 API Gateway
+### 🌐 API 网关
 
-| Skill | Description |
-|-------|-------------|
-| [Apisix](./apisix/) | Apache APISIX API Gateway |
+| 技能 | 描述 |
+|------|------|
+| [APISIX](./apisix/) | Apache APISIX API 网关 |
 
-## 🚀 Quick Start
+## 🚀 快速开始
 
-Each Skill directory contains:
+### 1. 安装技能
 
-- **SKILL.md**: Configuration parameters + use cases + FAQ
-- **README.md**: Installation guide (for some skills)
+```bash
+# 克隆仓库
+git clone https://github.com/koderover/devops-skills.git
 
-## 🤝 Contributing
+# 复制到 OpenClaw 工作空间
+cp -r devops-skills/* ~/.openclaw/workspace/skills/
+```
 
-Your contributions are welcome! Please read [CONTRIBUTING.md](./CONTRIBUTING.md) to learn how to contribute.
+### 2. 配置凭证
 
-## 📄 License
+每个技能目录包含：
 
-MIT License - see [LICENSE](./LICENSE)
+- **SKILL.md**: 配置参数 + 使用示例 + 常见问题
+- **README.md**: 安装指南（部分技能）
+
+在 `~/.openclaw/workspace/.env` 中配置所需的环境变量：
+
+```bash
+# GitHub
+GITHUB_TOKEN=your-token
+GITHUB_OWNER=your-org
+
+# GitLab
+GITLAB_URL=https://gitlab.com
+GITLAB_TOKEN=your-token
+
+# Jenkins
+JENKINS_URL=https://jenkins.example.com
+JENKINS_USER=admin
+JENKINS_TOKEN=your-api-token
+
+# Zadig
+ZADIG_API_URL=https://your-zadig.example.com
+ZADIG_API_KEY=your-jwt-token
+```
+
+### 3. 开始使用
+
+直接和 OpenClaw 对话即可调用技能：
+
+```
+帮我列出 GitHub 仓库
+帮我触发 Jenkins 构建
+帮我查看 Zadig 项目状态
+```
+
+## 🤝 贡献指南
+
+欢迎贡献！请阅读 [CONTRIBUTING.md](./CONTRIBUTING.md) 了解如何贡献技能。
+
+## 📄 许可证
+
+MIT License - 查看 [LICENSE](./LICENSE)
+
+## 📱 联系我们
+
+- 问题反馈：GitHub Issues
+- 微信群：扫码加入讨论
+
+![联系我们](./contact.png)
