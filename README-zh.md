@@ -57,9 +57,7 @@
 
 ## 🤝 贡献指南
 
-欢迎贡献你的技能！请阅读 [CONTRIBUTING.md](./CONTRIBUTING.md) 了解如何贡献。
-
-中文版贡献指南：[CONTRIBUTING-zh.md](./CONTRIBUTING-zh.md)
+欢迎贡献你的技能！请阅读 [CONTRIBUTING-zh.md](./CONTRIBUTING-zh.md) 了解如何贡献。
 
 ## 📄 许可证
 

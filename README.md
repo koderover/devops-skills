@@ -59,8 +59,6 @@ Each Skill directory contains:
 
 Your contributions are welcome! Please read [CONTRIBUTING.md](./CONTRIBUTING.md) to learn how to contribute.
 
-中文版贡献指南：[CONTRIBUTING-zh.md](./CONTRIBUTING-zh.md)
-
 ## 📄 License
 
 MIT License - see [LICENSE](./LICENSE)
